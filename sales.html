@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Sales Insight</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .image-featured img {
+            width: 100%;
+            max-width: 70%;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="min-h-screen flex flex-col">
+
+        <!-- Main Content -->
+        <main id="main" class="flex-grow p-6">
+            <article class="bg-white  rounded-lg p-6 mb-8">
+                <header class="mb-4">
+                    <div class="title">
+                        <h2 class="text-2xl font-bold"><a href="#">Company Sales Insight</a></h2>
+                        <p class="text-gray-600">Tools: Power BI and SQL</p>
+                    </div>
+                </header>
+                <section>
+                    <h3 class="text-xl font-semibold mb-2">Introduction:</h3>
+                    <p class="text-gray-700 mb-6">
+                        The Sales Insight Report is a comprehensive project designed to analyze and visualize sales performance across various dimensions using SQL and Power BI. The SQL part involved thorough data cleaning to ensure accuracy and consistency of the data. The Power BI dashboard provides an interactive and dynamic view of critical sales metrics, helping in making informed decisions and understanding sales trends across different zones, customers, and markets.
+                    </p>
+
+                    <h3 class="text-xl font-semibold mb-2">Dashboard Details:</h3>
+                    
+                    <h5 class="text-lg font-semibold mb-1">Summary:</h5>
+                    <p class="text-gray-700 mb-4">The Summary Page provides an overview of key sales metrics, including revenue and total sales quantity (sales qty). It features visualizations for revenue and sales quantity by customer type and zone, as well as charts showing revenue by year and quarter. This page offers insights into overall sales performance and trends.</p>
+                    <span class="image-featured mb-4"><img src="images/sales1.png" alt="Summary Dashboard" /></span>
+
+                    <h5 class="text-lg font-semibold mb-1">Comparison:</h5>
+                    <p class="text-gray-700 mb-4">The Comparison Page focuses on identifying top and bottom performers. It includes visualizations highlighting the top and bottom markets and customers by sales volume, enabling a clear comparison of performance across different segments.</p>
+                    <span class="image-featured mb-4"><img src="images/sales 2.png" alt="Comparison Dashboard" /></span>
+
+                    <h5 class="text-lg font-semibold mb-1">Details:</h5>
+                    <p class="text-gray-700 mb-6">The Details Page offers an in-depth view of the sales data, featuring comprehensive tables that provide detailed information about sales by customers and markets. This page includes all the necessary details to conduct granular analysis and understand specific sales dynamics across different segments.</p>
+                    <span class="image-featured mb-4"><img src="images/sales3.png" alt="Details Dashboard" /></span>
+                </section>
+                
+                <footer class="mt-7">
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/0smanJamal/Company-Sales-Insights-/blob/main/sales%20insight.sql" class="bg-blue-500 text-white py-2 px-4 rounded-lg inline-block">SQL Code</a>
+                        <a href="https://github.com/0smanJamal/Company-Sales-Insights-" class="bg-blue-500 text-white py-2 px-4 rounded-lg inline-block">GitHub</a>
+                    </div>
+                </footer>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="gradient-bg text-black py-4">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2024 Osman Jamal. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
