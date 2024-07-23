@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osman Jamal - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #000428, #004e92);
+        }
+        .full-page {
+            min-height: 100vh;
+        }
+        .about-bg {
+            background-color: #000000c8; /* Light background for About Me section */
+        }
+        .project-card {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .project-card img {
+            width: 50%;
+            height: auto;
+        }
+        .project-card .title h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .responsive-image {
+            max-width: 300px; /* Adjust to desired width */
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Optional: for rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: for shadow effect */
+        }
+
+
+    </style>
+</head>
+<body class="h-screen flex flex-col">
+    <header class="gradient-bg flex flex-col justify-between full-page">
+        <div class="flex-grow flex items-center justify-center">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-white mb-4">Hello I'm Osman Jamal and I'm</h1>
+                <p class="text-4xl text-white Typewriter__wrapper"></p>
+            </div>
+        </div>
+        <footer class="footer-container text-white py-4">
+            <div class="container mx-auto text-center">
+                <p>Contact me on:</p>
+                <div class="flex justify-center space-x-4 mt-2">
+                    <a href="https://www.linkedin.com/in/osman-mahmod-187b1831a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="text-white">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/0smanJamal" target="_blank" class="text-white">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://osmanjamal170100@gmail.com" class="text-white">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </header>
+
+    <section id="about" class="about-bg text-white py-16 full-page">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center px-4 mt-12">
+            <div class="lg:w-1/3 mt-7 lg:ml-14 lg:mb-0">
+                <img src="/osman_portfolio/images/photo_2024-07-23_21-48-00.jpg" alt="Osman Jamal" class="w-48 h-48 object-cover rounded-full shadow-lg">
+            </div>
+            <div class="lg:w-1/2 lg:pl-12 mt-10 lg:mr-10">
+                <h2 class="text-3xl font-bold mb-4">About Me</h2>
+                <p class="text-lg">
+                    I am a dedicated data analyst with a strong background in Power BI, SQL, and Python. With a degree in Electronic Engineering, I have developed a deep understanding of data analysis and visualization. My portfolio showcases a variety of projects, each demonstrating my ability to transform raw data into actionable insights. From sales and financial analysis to web scraping and data cleaning, I bring a diverse skill set and a passion for leveraging data to drive informed decision-making. Let's connect and explore how I can contribute to your data-driven success.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto p-4 py-16 space-y-8">
+        <h2 class="text-3xl font-bold text-center">My Works</h2>
+        <article class="project-card p-6">
+            <header>
+                <div class="title">
+                    <h2 class="text-xl font-bold"><a href="/osman_portfolio/bank.html">Bank loan Data Analsis</a></h2>
+                    <p class="text-gray-600">Bank loan Data Analysis By Power BI and SQL</p>
+                </div>
+            </header>
+            <a href="/osman_portfolio/bank.html" class="image featured block my-4"><img  class="w-fullmd:w-2/3 lg:w-1/2 mx-auto" src="/osman_portfolio/images/Bankhome.jpg" alt=""   /></a>
+            <p class="text-gray-700">The Bank Loan Report project is designed to provide a comprehensive analysis of our lending activities through three key dashboards: Summary, Overview, and Details. The Summary Dashboard focuses on crucial loan metrics, including total applications, funded amounts, and repayment data. The Overview Dashboard visualizes these metrics through various charts to identify trends and regional patterns. The Details Dashboard offers an in-depth view of all essential loan data, enabling detailed analysis and easy access to critical information.</p>
+            <footer class="mt-4">
+                <ul class="actions">
+                    <li><a href="/osman_portfolio/bank.html" class="button large bg-blue-500 text-white py-2 px-4 rounded">Open Project</a></li>
+                </ul>
+            </footer>
+        </article>
+
+        <article class="project-card p-6">
+            <header>
+                <div class="title">
+                    <h2 class="text-xl font-bold"><a href="car.html">Car Sales Dashboard</a></h2>
+                    <p class="text-gray-600">Car Sales Analysis Project by Power BI</p>
+                </div>
+            </header>
+            <a href="car.html" class="image featured block my-4"><img  class="w-fullmd:w-2/3 lg:w-1/2 mx-auto" src="/osman_portfolio/images/carhome.jpg" alt=""   /></a>
+            <p class="text-gray-700">The Car Sales Dashboard is designed to provide comprehensive insights into the sales performance of our car dealership. Utilizing Power BI, this interactive dashboard offers real-time visualization of critical Key Performance Indicators (KPIs) related to car sales. The objective is to enable data-driven decision-making by presenting a clear view of sales trends, average prices, and detailed metrics across various dimensions such as body style, color, and dealer regions. This dashboard helps in monitoring progress, identifying growth opportunities, and understanding sales performance over time.</p>
+            <footer class="mt-4">
+                <ul class="actions">
+                    <li><a href="car.html" class="button large bg-blue-500 text-white py-2 px-4 rounded">Open Project</a></li>
+                </ul>
+            </footer>
+        </article>
+
+        <article class="project-card p-6">
+            <header>
+                <div class="title">
+                    <h2 class="text-xl font-bold"><a href="sales.html">Company Sales Insight</a></h2>
+                    <p class="text-gray-600">Company Sales Insight Analysis Project by Power BI and SQL</p>
+                </div>
+            </header>
+            <a href="sales.html" class="image featured block my-4"><img class="w-fullmd:w-2/3 lg:w-1/2 mx-auto" src="/osman_portfolio/images/saleshome.png" alt="" /></a>
+            <p class="text-gray-700">The Sales Insight Report is a comprehensive project designed to analyze and visualize sales performance across various dimensions using SQL and Power BI. The SQL part involved thorough data cleaning to ensure accuracy and consistency of the data. The Power BI dashboard provides an interactive and dynamic view of critical sales metrics, helping in making informed decisions and understanding sales trends across different zones, customers, and markets.</p>
+            <footer class="mt-4">
+                <ul class="actions">
+                    <li><a href="sales.html" class="button large bg-blue-500 text-white py-2 px-4 rounded">Open Project</a></li>
+                </ul>
+            </footer>
+        </article>
+
+        <article class="project-card p-6">
+            <header>
+                <div class="title">
+                    <h2 class="text-xl font-bold"><a href="pizza.html">Pizza Restaurant Sales Analysis</a></h2>
+                    <p class="text-gray-600">Pizza Restaurant Sales Analysis Project by Power BI and SQL</p>
+                </div>
+            </header>
+            <a href="pizza.html" class="image featured block my-4"><img class="w-fullmd:w-2/3 lg:w-1/2 mx-auto" src="/osman_portfolio/images/homepizza.webp" alt="" /></a>
+            <p class="text-gray-700">The Pizza Restaurant Sales Analysis project is designed to provide insights into the sales and order trends of a pizza restaurant. Using Power BI, this project visualizes key metrics and helps in understanding the performance and customer preferences. The analysis includes various dimensions such as sales by type, order trends, and customer behavior, enabling data-driven decision-making for improving restaurant operations and strategies.</p>
+            <footer class="mt-4">
+                <ul class="actions">
+                    <li><a href="pizza.html" class="button large bg-blue-500 text-white py-2 px-4 rounded">Open Project</a></li>
+                </ul>
+            </footer>
+        </article>
+
+        <article class="project-card p-6">
+            <header>
+                <div class="title">
+                    <h2 class="text-xl font-bold"><a href="data-survey.html">Data Professional Survey Breakdown</a></h2>
+                    <p class="text-gray-600">Data Survey Project by Power BI</p>
+                </div>
+            </header>
+            <a href="data-survey.html" class="image featured block my-4"><img class="w-fullmd:w-2/3 lg:w-1/2 mx-auto" src="/osman_portfolio/images/survey.png" alt="" /></a>
+            <p class="text-gray-700">This project involves the creation of a Power BI dashboard to analyze and visualize the results of a survey conducted among data professionals. The dashboard provides insights into various aspects of the data profession, including demographics, job roles, skills, and industry trends.</p>
+            <footer class="mt-4">
+                <ul class="actions">
+                    <li><a href="data-survey.html" class="button large bg-blue-500 text-white py-2 px-4 rounded">Open Project</a></li>
+                </ul>
+            </footer>
+        </article>
+    </main>
+
+    <section class="py-6">
+        <div class="container mx-auto">
+            <div class="mini-posts flex flex-wrap justify-center gap-4">
+                <article class="mini-post bg-white shadow p-4 rounded-lg max-w-xs">
+                    <a href="https://github.com/0smanJamal/covid19" class="image block my-2">
+                        <img src="/osman_portfolio/images/covid-19.jpg" alt="Covid-19 Data Cleaning" class="w-100 h-100 object-cover rounded"/>
+                    </a>
+                    <header>
+                        <h3 class="text-lg font-semibold text-center"><a href="https://github.com/0smanJamal/covid19" class="text-blue-500 hover:underline">Covid-19 Data Cleaning And Analysis By SQL</a></h3>
+                    </header>
+                </article>
+                <article class="mini-post bg-white shadow p-4 rounded-lg max-w-xs">
+                    <a href="https://github.com/0smanJamal/NashvilleHousing-project" class="image block my-2">
+                        <img src="/osman_portfolio/images/housing.jpg" alt="Nashville Housing Data Cleaning" class="w-100 h-100 object-cover rounded"/>
+                    </a>
+                    <header>
+                        <h3 class="text-lg font-semibold text-center"><a href="https://github.com/0smanJamal/NashvilleHousing-project" class="text-blue-500 hover:underline">NashvilleHousing-project Data Cleaning And Analysis By SQL</a></h3>
+                    </header>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer class="gradient-bg flex flex-col justify-center items-center min-h-screen">
+        <div class="text-white text-center py-12">
+            <p class="text-3xl font-bold mb-2">Contact me </p>
+            <p class="text-2xl mb-4">Email: osmanjamal170100@gmail.com</p>
+            <p class="text-2xl mb-4">Phone Number: 054 158 8451</p>
+            <div class="flex justify-center items-center">
+                <a href = https://osmanjamal170100@gmail.com class="text-white">
+                    <i class="fas fa-envelope fa-6x"></i>
+                </a>
+            </div>
+        </div>
+        <div class="container mx-auto text-white text-center">
+            <p>&copy; 2024 Osman Jamal. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+
+   
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const texts = ["Data Analyst", "Business Analyst"];
+            let textIndex = 0;
+            let charIndex = 0;
+            let isTyping = true;
+            const typingSpeed = 150;
+            const erasingSpeed = 100;
+            const pauseTime = 1000;
+
+            function typeWriter() {
+                const typewriter = document.querySelector('.Typewriter__wrapper');
+                if (isTyping) {
+                    if (charIndex < texts[textIndex].length) {
+                        typewriter.textContent += texts[textIndex].charAt(charIndex);
+                        charIndex++;
+                        setTimeout(typeWriter, typingSpeed);
+                    } else {
+                        isTyping = false;
+                        setTimeout(typeWriter, pauseTime);
+                    }
+                } else {
+                    if (charIndex > 0) {
+                        typewriter.textContent = texts[textIndex].substring(0, charIndex - 1);
+                        charIndex--;
+                        setTimeout(typeWriter, erasingSpeed);
+                    } else {
+                        isTyping = true;
+                        textIndex = (textIndex + 1) % texts.length;
+                        setTimeout(typeWriter, typingSpeed);
+                    }
+                }
+            }
+
+            typeWriter();
+        });
+    </script>
+</body>
+</html>
+
+
+
